@@ -1,0 +1,51 @@
+
+  :root {
+    --base: #ffffff;
+    --spacing: 10px;
+    --blur: 1px;
+    --opacity: 1;
+  }   
+
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    opacity: var(--opacity);
+  }
+   
+  .hl {
+    color: var(--base);
+  }
+
+   body {
+      text-align: center;
+      background: #160f0f;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    input {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 540px) {
+      .controls {
+       margin-top: 50px;
+       font-size: 15px;
+      }
+
+      img {
+        margin-top: 100px;
+      }
+
+      h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+    }
